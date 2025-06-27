@@ -150,17 +150,25 @@
 </section>
         <!-- About Section-->
 <section class="page-section bg-primary text-white mb-0" id="about">
-    <div class="container text-white">
+  <div class="container text-white">
     <h2 class="page-section-heading text-center text-uppercase mb-5">🎯 Objetivos Educacionais</h2>
-    <p class="fs-5 fst-italic text-light">
-      Proporcionar um material didático acessível e reutilizável sobre lógica de programação, facilitando a compreensão de conceitos fundamentais por meio da prática e visualização. O objetivo é desenvolver a autonomia dos estudantes com feedbacks imediatos e valorizar o conhecimento produzido por alunos e professores da instituição.
-    </p>
-    <div class="accordion accordion-custom" id="objetivosAccordion">
+
+    <!-- Texto centralizado, mas ocupando mais largura -->
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center">
+        <p class="fs-5 fst-italic text-light">
+          Proporcionar um material didático acessível e reutilizável sobre lógica de programação, facilitando a compreensão de conceitos fundamentais por meio da prática e visualização. O objetivo é desenvolver a autonomia dos estudantes com feedbacks imediatos e valorizar o conhecimento produzido por alunos e professores da instituição.
+        </p>
+      </div>
+    </div>
+
+    <!-- Accordion -->
+    <div class="accordion accordion-custom mt-4" id="objetivosAccordion">
       <!-- Objetivo 1 -->
       <div class="accordion-item custom-item">
         <h2 class="accordion-header">
-          <button class="accordion-button custom-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#objetivo1">
-            🧠 Desenvolver raciocínio lógico
+          <button class="accordion-button custom-btn collapsed text-start" type="button" data-bs-toggle="collapse" data-bs-target="#objetivo1">
+            <span style="color: #ADD8E6;">🧠</span> Desenvolver raciocínio lógico
           </button>
         </h2>
         <div id="objetivo1" class="accordion-collapse collapse" data-bs-parent="#objetivosAccordion">
@@ -178,8 +186,8 @@
       <!-- Objetivo 2 -->
       <div class="accordion-item custom-item">
         <h2 class="accordion-header">
-          <button class="accordion-button custom-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#objetivo2">
-            💡 Compreender fundamentos da programação
+          <button class="accordion-button custom-btn collapsed text-start" type="button" data-bs-toggle="collapse" data-bs-target="#objetivo2">
+            <span style="color: #ADD8E6;">💡</span> Compreender fundamentos da programação
           </button>
         </h2>
         <div id="objetivo2" class="accordion-collapse collapse" data-bs-parent="#objetivosAccordion">
@@ -197,8 +205,8 @@
       <!-- Objetivo 3 -->
       <div class="accordion-item custom-item">
         <h2 class="accordion-header">
-          <button class="accordion-button custom-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#objetivo3">
-            🛠️ Aplicar conhecimentos na prática
+          <button class="accordion-button custom-btn collapsed text-start" type="button" data-bs-toggle="collapse" data-bs-target="#objetivo3">
+            <span style="color: #ADD8E6;">🛠️</span> Aplicar conhecimentos na prática
           </button>
         </h2>
         <div id="objetivo3" class="accordion-collapse collapse" data-bs-parent="#objetivosAccordion">
@@ -214,39 +222,44 @@
       </div>
     </div>
   </div>
+</section>
         <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            2215 John Daniel Drive
-                            <br />
-                            Clark, MO 65243
-                        </p>
-                    </div>
-                    <!-- Footer Social Icons-->
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
-                    </div>
-                    <!-- Footer About Text-->
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+ <footer class="footer text-center">
+  <div class="container">
+    <div class="row">
+      <!-- Localização / Curso -->
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <h4 class="text-uppercase mb-4">Informações</h4>
+        <p class="lead mb-0">
+          Curso de Análise e Desenvolvimento de Sistemas<br />
+          Universidade Tecnológica Federal do Paraná (UTFPR) – Campus Curitiba
+        </p>
+      </div>
+
+      <!-- Redes ou Repositórios -->
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <h4 class="text-uppercase mb-4">Recursos</h4>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/juliocovary/rea-descomplica-logica" target="_blank" title="Repositório no GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="btn btn-outline-light btn-social mx-1" href="https://www.youtube.com/@descomplicalogica" target="_blank" title="Canal no YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+
+      <!-- Sobre o Projeto -->
+      <div class="col-lg-4">
+        <h4 class="text-uppercase mb-4">Sobre o Projeto</h4>
+        <p class="lead mb-0">
+          Descomplica Lógica é um Recurso Educacional Aberto (REA) que ensina lógica de programação de forma acessível e prática por meio de vídeos e exercícios online.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copyright py-4 text-center text-white">
+    <div class="container"><small>Copyright &copy; Descomplica Lógica 2025</small></div>
+</div>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright &copy; Your Website 2023</small></div>
