@@ -34,7 +34,9 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Aulas</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Objetivos</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Manual de Usuário</a></li>
+                        <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#manualModal">Manual de Usuário</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -301,6 +303,7 @@
                             <div class="d-grid gap-3 mb-4">
                                 <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=DvO1-WLS14c" target="_blank">🎥 Aula</a>
                                 <a class="nav-link py-3 px-0 px-lg-3 rounded fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#quizModal1">📝 Exercícios</a>
+                                <a class="btn btn-outline-dark btn-lg" href="assets/zips/variaveis.zip" download>📥 Baixar Conteúdo</a>
                             </div>
                             <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fechar</button>
                         </div>
@@ -333,6 +336,7 @@
                             <div class="d-grid gap-3 mb-4">
                                 <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=Uu-eeCapKLI" target="_blank">🎥 Aula</a>
                                 <a class="nav-link py-3 px-0 px-lg-3 rounded fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#quizModal5">📝 Exercícios</a>
+                                <a class="btn btn-outline-dark btn-lg" href="assets/zips/vetores.zip" download>📥 Baixar Conteúdo</a>
                             </div>
                             <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fechar</button>
                         </div>
@@ -365,6 +369,7 @@
                             <div class="d-grid gap-3 mb-4">
                                 <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=ewD645ej1jU" target="_blank">🎥 Aula</a>
                                 <a class="nav-link py-3 px-0 px-lg-3 rounded fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#quizModal2">📝 Exercícios</a>
+                                <a class="btn btn-outline-dark btn-lg" href="assets/zips/entradasaida.zip" download>📥 Baixar Conteúdo</a>
                             </div>
                             <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fechar</button>
                         </div>
@@ -397,6 +402,7 @@
                             <div class="d-grid gap-3 mb-4">
                                 <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=8l8ZaM3QMbk" target="_blank">🎥 Aula</a>
                                 <a class="nav-link py-3 px-0 px-lg-3 rounded fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#quizModal3">📝 Exercícios</a>
+                                <a class="btn btn-outline-dark btn-lg" href="assets/zips/estruturaselecao.zip" download>📥 Baixar Conteúdo</a>
                             </div>
                             <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fechar</button>
                         </div>
@@ -429,6 +435,7 @@
                             <div class="d-grid gap-3 mb-4">
                                 <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=jnBjm6lw5vA" target="_blank">🎥 Aula</a>
                                 <a class="nav-link py-3 px-0 px-lg-3 rounded fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#quizModal4">📝 Exercícios</a>
+                                <a class="btn btn-outline-dark btn-lg" href="assets/zips/estruturarepeticao.zip" download>📥 Baixar Conteúdo</a>
                             </div>
                             <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fechar</button>
                         </div>
@@ -461,6 +468,7 @@
                             <div class="d-grid gap-3 mb-4">
                                 <a class="btn btn-primary btn-lg" href="https://www.youtube.com/watch?v=WMaxsEyms9M" target="_blank">🎥 Aula</a>
                                 <a class="nav-link py-3 px-0 px-lg-3 rounded fw-bold" href="#" data-bs-toggle="modal" data-bs-target="#quizModal6">📝 Exercícios</a>
+                                <a class="btn btn-outline-dark btn-lg" href="assets/zips/funcoes.zip" download>📥 Baixar Conteúdo</a>
                             </div>
                             <button class="btn btn-secondary" data-bs-dismiss="modal"><i class="fas fa-xmark fa-fw"></i> Fechar</button>
                         </div>
@@ -642,6 +650,79 @@
       </div>
       <div class="modal-footer">
         <button class="btn btn-primary" onclick="corrigirQuiz6()">Verificar Respostas</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Manual de Usuário -->
+<div class="modal fade" id="manualModal" tabindex="-1" aria-labelledby="manualModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="manualModalLabel">📘 Manual do Usuário – Descomplica Lógica</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body fs-5 text-dark" style="line-height: 1.7;">
+        <p><strong>👋 Bem-vindo ao Descomplica Lógica!</strong></p>
+        <p>Este manual foi criado para te orientar a navegar pelo site e aproveitar ao máximo os recursos oferecidos.</p>
+
+        <hr>
+
+        <p><strong>✅ 1º Passo: Clique no botão <span class="text-primary">“Introdução”</span></strong></p>
+        <p>Logo na página inicial, clique no botão <strong>“Introdução”</strong> para assistir ao vídeo explicativo que apresenta o curso, sua proposta e como ele funciona.</p>
+
+        <hr>
+
+        <p><strong>📚 Acesso às Aulas</strong></p>
+        <ul>
+          <li>Vá até a seção <strong>“Aulas”</strong> no menu ou role a página até os módulos disponíveis.</li>
+          <li>Selecione uma aula clicando na imagem ou no título do módulo.</li>
+          <li>Uma janela será aberta com:</li>
+          <ul>
+            <li>🎥 Um vídeo explicativo do conteúdo;</li>
+            <li>📝 Um botão de acesso ao quiz interativo.</li>
+            <li>📄 Um botão de download para baixar o conteudo da aula (texto do video e exemplos);</li>
+          </ul>
+        </ul>
+
+        <hr>
+
+        <p><strong>📝 Como funcionam os Quizzes</strong></p>
+        <ul>
+          <li>Cada aula possui um quiz com <strong>6 perguntas objetivas</strong>.</li>
+          <li>As perguntas são baseadas diretamente no conteúdo do vídeo da aula.</li>
+          <li>Ao finalizar, clique em <strong>“Verificar Respostas”</strong> para ver o resultado.</li>
+          <li>Você receberá um feedback com o total de acertos e um destaque visual:</li>
+          <ul>
+            <li class="text-success">✅ Verde: bom desempenho (5 ou 6 acertos)</li>
+            <li class="text-danger">❌ Vermelho: precisa revisar (menos de 5 acertos)</li>
+          </ul>
+        </ul>
+
+        <hr>
+
+        <p><strong>📁 Materiais Complementares</strong></p>
+        <ul>
+          <li>Cada módulo inclui <strong>os arquivos de texto de cada aula</strong></li>
+          <li>Você pode baixar e estudar por conta própria se não puder ver a videoaula no momento.</li>
+        </ul>
+
+        <hr>
+
+        <p><strong>📱 Compatibilidade</strong></p>
+        <ul>
+          <li>O site é totalmente responsivo e pode ser acessado de computador, celular ou tablet.</li>
+          <li>Recomendamos o uso de navegadores modernos (Chrome, Firefox, Edge ou Opera).</li>
+        </ul>
+
+        <hr>
+
+        <p><strong>📌 Dica Final</strong></p>
+        <p>Você pode assistir aos vídeos, fazer os exercícios e voltar sempre que quiser revisar o conteúdo!</p>
+      </div>
+      <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
       </div>
     </div>
